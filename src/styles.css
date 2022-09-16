@@ -9,17 +9,28 @@ body {
     font-family: var(--content-font);
     font-weight: 400;
 }
+nav {
+    margin: 0 auto 190px auto;
+}
+nav ul {
+    margin-left: 645px;
+}
 h1 {
     margin-bottom: 24px;
     font-family: var(--head-font);
     font-size: 96px;
+}
+h3 {
+    font-family: var(--head-font);
+    font-size: 48px;
+    font-weight: 700;
 }
 img {
     max-width: 100%;
     height: auto;
 }
 .header {
-    padding: 160px 25px;
+    padding: 40px 139px 271px 165px;
     text-align: center;
     background: var(--color-header);
 }
@@ -58,6 +69,7 @@ img {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
+    color: var(--font-color);
 }
 .btn-content {
     padding: 18px 25px;
@@ -69,6 +81,45 @@ img {
 .btn-content:hover {
     border: 1px solid var(--button-color) !important;
 }
+.talk-here {
+    margin-top: 132px;
+    padding: 30px 120px;
+    background: var(--color-header);
+    border-radius: 20px;
+}
+.talk-here h3 {
+    margin-top: 25px;
+}
+.talk-here p{
+    margin-top: 18px;
+    color: var(--font-color);
+}
+.talk-here .btn {
+    margin-top: 45px;
+    margin-left: 330px;
+}
+.contacts {
+    margin: 80px auto 133px auto;
+    text-align: center;
+}
+.email {
+    display: block;
+    margin-bottom: 41px;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+} 
+.icons i {
+    margin-right: 31px;
+    padding: 10px 13px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--button-color);
+    background: var(--color-header);
+    border-radius: 50%;
+}
 
 @media (max-width:900px) {
     h1 {
@@ -78,7 +129,7 @@ img {
         padding: 0;
     }
     .header {
-        padding: 90px 25px;
+        padding: 70px 25px;
     }
     .project {
         padding: 0;
@@ -90,5 +141,21 @@ img {
     }
     .project p {
         margin: 15px auto;
+    }
+    .talk-here {
+        padding: 10px;
+        text-align: center;
+    }
+    .talk-here div {
+        margin: auto;
+    }
+    .talk-here .btn {
+    margin: 10px auto;
+    }
+    nav {
+
+    }
+    nav ul {
+        margin-left: 0;
     }
 }
