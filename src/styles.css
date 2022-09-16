@@ -1,16 +1,22 @@
 :root {
-    --color-header: #F9F7FE;
     --button-color: #6C63FF;
+    --color-header: #F9F7FE;
     --font-color: #272142;
+    --head-font: 'Playfair Display', serif;
+    --content-font: 'Poppins', sans-serif;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--content-font);
     font-weight: 400;
 }
 h1 {
     margin-bottom: 24px;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--head-font);
     font-size: 96px;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 .header {
     padding: 160px 25px;
@@ -27,9 +33,39 @@ h1 {
     font-size: 24px;
     font-weight: 400;
 }
-.btn-contact {
-    padding: 18px 46px;
-    border-radius: 4px;
+.btn-contact-me {
     background: var(--button-color);
     color: white;
+    font-size: 18px;
+    padding: 18px 46px;
+    line-height: 27px;
+    border-radius: 4px;
+}
+.btn-contact-me:hover {
+    background: var(--button-color) !important;
+}
+.project {
+    padding: 120px 60px;
+}
+.project h2 {
+    margin-bottom: 55px;
+    font-family: var(--head-font);
+    font-size: 64px;
+    font-weight: 700;
+}
+.project p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.btn-content {
+    padding: 18px 25px;
+    border: 1px solid var(--button-color);
+    border-radius: 4px;
+    color: var(--button-color);
+    font-weight: 500;
+}
+.btn-content:hover {
+    border: 1px solid var(--button-color) !important;
 }
