@@ -69,3 +69,26 @@ img {
 .btn-content:hover {
     border: 1px solid var(--button-color) !important;
 }
+
+@media (max-width:900px) {
+    h1 {
+        font-size: 60px;
+    }
+    .col {
+        padding: 0;
+    }
+    .header {
+        padding: 90px 25px;
+    }
+    .project {
+        padding: 0;
+        text-align: center;
+    }
+    .project h2 {
+        margin: 15px auto ;
+        font-size: 50px;
+    }
+    .project p {
+        margin: 15px auto;
+    }
+}
