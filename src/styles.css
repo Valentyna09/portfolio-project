@@ -123,21 +123,23 @@ img {
 }
 
 /* ABOUT  */
-.header-about {
+.header-content {
     padding: 40px 139px 200px 165px;
 }
-.header-about h1 {
+.header-content h1 {
     font-size: 64px;
 }
-.header-about h2 {
+.header-content h2 {
     margin-bottom: 18px;
     font-size: 18px;
 }
-.header-about p {
+.header-content p {
     margin-bottom: 48px;
     font-size: 16px;
 }
-
+.header-content h3 {
+    font-size: 24px;
+}
 @media (max-width:900px) {
     h1 {
         font-size: 60px;
@@ -180,21 +182,21 @@ img {
     img {
         margin-top: 15px;
     }
-    .header-about {
+    .header-content {
         padding: 70px 25px;
         text-align: center;
     }
 
-    .header-about h1 {
+    .header-content h1 {
         font-size: 40px;
     }
 
-    .header-about h2 {
+    .header-content h2 {
         margin-bottom: 18px;
         font-size: 18px;
     }
 
-    .header-about p {
+    .header-content p {
         margin-bottom: 48px;
         font-size: 16px;
     }
