@@ -175,4 +175,27 @@ img {
     nav ul {
         margin-left: 0;
     }
+
+    /* ABOUT  */
+    img {
+        margin-top: 15px;
+    }
+    .header-about {
+        padding: 70px 25px;
+        text-align: center;
+    }
+
+    .header-about h1 {
+        font-size: 40px;
+    }
+
+    .header-about h2 {
+        margin-bottom: 18px;
+        font-size: 18px;
+    }
+
+    .header-about p {
+        margin-bottom: 48px;
+        font-size: 16px;
+    }
 }
