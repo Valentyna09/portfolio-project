@@ -15,15 +15,19 @@ nav {
 nav ul {
     margin-left: 645px;
 }
+h1, h2, h3 {
+    font-family: var(--head-font);
+}
 h1 {
     margin-bottom: 24px;
-    font-family: var(--head-font);
     font-size: 96px;
 }
 h3 {
-    font-family: var(--head-font);
     font-size: 48px;
     font-weight: 700;
+}
+p {
+    color: var(--font-color);
 }
 img {
     max-width: 100%;
@@ -37,7 +41,6 @@ img {
 .header p {
     font-size: 36px;
     font-weight: 700;
-    color: var(--font-color);
 }
 .header h2 {
     margin-bottom: 49px;
@@ -45,12 +48,12 @@ img {
     font-weight: 400;
 }
 .btn-contact-me {
-    background: var(--button-color);
-    color: white;
     font-size: 18px;
     padding: 18px 46px;
     line-height: 27px;
     border-radius: 4px;
+    color: white;
+    background: var(--button-color);
 }
 .btn-contact-me:hover {
     background: var(--button-color) !important;
@@ -60,7 +63,6 @@ img {
 }
 .project h2 {
     margin-bottom: 55px;
-    font-family: var(--head-font);
     font-size: 64px;
     font-weight: 700;
 }
@@ -69,14 +71,14 @@ img {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    color: var(--font-color);
 }
 .btn-content {
     padding: 18px 25px;
+    font-weight: 500;
     border: 1px solid var(--button-color);
     border-radius: 4px;
     color: var(--button-color);
-    font-weight: 500;
+
 }
 .btn-content:hover {
     border: 1px solid var(--button-color) !important;
@@ -84,15 +86,14 @@ img {
 .talk-here {
     margin-top: 132px;
     padding: 30px 120px;
-    background: var(--color-header);
     border-radius: 20px;
+    background: var(--color-header);
 }
 .talk-here h3 {
     margin-top: 25px;
 }
 .talk-here p{
     margin-top: 18px;
-    color: var(--font-color);
 }
 .talk-here .btn {
     margin-top: 45px;
@@ -116,9 +117,25 @@ img {
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
+    border-radius: 50%;
     color: var(--button-color);
     background: var(--color-header);
-    border-radius: 50%;
+}
+
+/* ABOUT  */
+.header-about {
+    padding: 40px 139px 271px 165px;
+}
+.header-about h1 {
+    font-size: 64px;
+}
+.header-about h2 {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+.header-about p {
+    margin-bottom: 48px;
+    font-size: 16px;
 }
 
 @media (max-width:900px) {
