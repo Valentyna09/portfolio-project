@@ -1,3 +1,4 @@
+/* common  */
 :root {
     --button-color: #6C63FF;
     --color-header: #F9F7FE;
@@ -9,22 +10,8 @@ body {
     font-family: var(--content-font);
     font-weight: 400;
 }
-nav {
-    margin: 0 auto 190px auto;
-}
-nav ul {
-    margin-left: 645px;
-}
 h1, h2, h3 {
     font-family: var(--head-font);
-}
-h1 {
-    margin-bottom: 24px;
-    font-size: 96px;
-}
-h3 {
-    font-size: 48px;
-    font-weight: 700;
 }
 p {
     color: var(--font-color);
@@ -33,19 +20,116 @@ img {
     max-width: 100%;
     height: auto;
 }
-.header {
+/* NAVIGATION  */
+.logo {
+    max-height: 40px;
+    margin: 0;
+}
+nav {
+    padding: 30px 0;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin-left: 20px;
+    list-style: none;
+    line-height: 45px;
+}
+li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+li a:hover, .active-link {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--button-color);
+}
+/* MAIN  */
+.main-content {
+    padding: 140px 20px;
+}
+.content h1 {
+    font-size: 64px;
+    line-height: 85px;
+}
+.main-content h2 {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+.main-content h3 {
+    font-size: 24px;
+    line-height: 36px;
+}
+.main-content p {
+    margin-bottom: 48px;
+    font-size: 16px;
+}
+/* FOOTER  */
+.talk-here {
+    margin-top: 132px;
+    padding: 30px 120px;
+    border-radius: 20px;
+    background: var(--color-header);
+}
+.talk-here h3 {
+    margin-top: 25px;
+    font-size: 48px;
+    font-weight: 700;
+}
+.talk-here p {
+    margin-top: 18px;
+}
+.talk-here .btn {
+    margin-top: 45px;
+    margin-left: 330px;
+}
+/* CONTACTS  */
+.contacts {
+    margin: 80px auto 133px auto;
+    text-align: center;
+}
+.email {
+    display: block;
+    margin-bottom: 41px;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+.icons i {
+    margin-right: 31px;
+    padding: 10px 13px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    border-radius: 50%;
+    color: var(--button-color);
+    background: var(--color-header);
+}
+
+/* HOME  */
+.header-home {
     padding: 40px 139px 271px 165px;
     text-align: center;
     background: var(--color-header);
 }
-.header p {
-    font-size: 36px;
-    font-weight: 700;
+.header-home h1 {
+    margin-bottom: 24px;
+    font-size: 96px;
+    line-height: 127px;
 }
-.header h2 {
+.header-home h2 {
     margin-bottom: 49px;
     font-size: 24px;
     font-weight: 400;
+}
+.header-home p {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
 }
 .btn-contact-me {
     font-size: 18px;
@@ -78,126 +162,66 @@ img {
     border: 1px solid var(--button-color);
     border-radius: 4px;
     color: var(--button-color);
-
 }
 .btn-content:hover {
     border: 1px solid var(--button-color) !important;
 }
-.talk-here {
-    margin-top: 132px;
-    padding: 30px 120px;
-    border-radius: 20px;
-    background: var(--color-header);
-}
-.talk-here h3 {
-    margin-top: 25px;
-}
-.talk-here p{
-    margin-top: 18px;
-}
-.talk-here .btn {
-    margin-top: 45px;
-    margin-left: 330px;
-}
-.contacts {
-    margin: 80px auto 133px auto;
+
+@media (max-width:900px) {
+img {
+        margin-top: 15px;
+    } 
+/* MAIN  */
+.main-content {
+    padding: 70px 25px;
     text-align: center;
 }
-.email {
-    display: block;
-    margin-bottom: 41px;
-    font-size: 24px;
-    font-weight: 500;
-    color: black;
-    text-decoration: none;
-} 
-.icons i {
-    margin-right: 31px;
-    padding: 10px 13px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    border-radius: 50%;
-    color: var(--button-color);
-    background: var(--color-header);
+.main-content h1 {
+    font-size: 34px;
+    line-height: 60px;
 }
-
-/* ABOUT  */
-.header-content {
-    padding: 40px 139px 200px 165px;
-}
-.header-content h1 {
-    font-size: 64px;
-}
-.header-content h2 {
+.main-content h2 {
     margin-bottom: 18px;
     font-size: 18px;
 }
-.header-content p {
+.main-content p {
     margin-bottom: 48px;
     font-size: 16px;
 }
-.header-content h3 {
-    font-size: 24px;
+
+/* FOOTER  */
+.talk-here {
+    padding: 10px;
+    text-align: center;
 }
-@media (max-width:900px) {
-    h1 {
-        font-size: 60px;
-    }
-    .col {
-        padding: 0;
-    }
-    .header {
-        padding: 70px 25px;
-    }
-    .project {
-        padding: 0;
-        text-align: center;
-    }
-    .project h2 {
-        margin: 15px auto ;
-        font-size: 50px;
-    }
-    .project p {
-        margin: 15px auto;
-    }
-    .talk-here {
-        padding: 10px;
-        text-align: center;
-    }
-    .talk-here div {
-        margin: auto;
-    }
-    .talk-here .btn {
+.talk-here div {
+    margin: auto;
+}
+.talk-here .btn {
     margin: 10px auto;
-    }
-    nav {
-        margin: 0 auto 15px auto;
-    }
-    nav ul {
-        margin-left: 0;
-    }
+}
 
-    /* ABOUT  */
-    img {
-        margin-top: 15px;
-    }
-    .header-content {
-        padding: 70px 25px;
-        text-align: center;
-    }
+/* CONTACTS  */
+.contacts {
+    margin: 60px auto;
+}
 
-    .header-content h1 {
-        font-size: 40px;
-    }
-
-    .header-content h2 {
-        margin-bottom: 18px;
-        font-size: 18px;
-    }
-
-    .header-content p {
-        margin-bottom: 48px;
-        font-size: 16px;
-    }
+/* HOME  */
+.header-home {
+    padding: 70px 25px;
+}
+.header-home h1 {
+    font-size: 60px;
+}
+.project {
+    padding: 0;
+    text-align: center;
+}
+.project h2 {
+    margin: 15px auto;
+    font-size: 50px;
+}
+.project p {
+    margin: 15px auto;
+}
 }
