@@ -17,34 +17,31 @@ p {
     color: var(--font-color);
 }
 img {
-    max-width: 100%;
+    max-width: 110%;
     height: auto;
 }
 /* NAVIGATION  */
+nav {
+    background: var(--color-header);
+}
+.navbar-brand {
+    color: var(--button-color);
+    font-weight: 900;
+}
 .logo {
     max-height: 40px;
     margin: 0;
 }
-nav {
-    padding: 30px 0;
+.container-fluid {
+    padding: 15px 200px;
 }
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-nav li {
-    display: inline;
-    margin-left: 20px;
-    list-style: none;
-    line-height: 45px;
-}
-li a {
-    text-decoration: none;
+.nav-link {
+    margin: 0 10px;
+    font-size: 18px;
+    line-height: 18px;
     color: var(--font-color);
 }
-li a:hover, .active-link {
-    font-size: 16px;
-    line-height: 18px;
+.active-link, .nav-link:hover {
     color: var(--button-color);
 }
 
@@ -61,12 +58,13 @@ li a:hover, .active-link {
     font-size: 18px;
 }
 .main-content h3 {
-    font-size: 24px;
+    font-size: 27px;
     line-height: 36px;
+    color: var(--button-color);
 }
 .main-content p {
-    margin-bottom: 48px;
-    font-size: 16px;
+    margin-bottom: 0px;
+    font-size: 18px;
 }
 .btn-content {
     padding: 18px 25px;
@@ -103,7 +101,7 @@ footer .talk-here {
     margin-bottom: 41px;
     font-size: 24px;
     font-weight: 500;
-    color: black;
+    color: var(--font-color);
     text-decoration: none;
 }
 .email:hover {
@@ -126,7 +124,8 @@ footer .talk-here {
 
 /* HOME  */
 .header-home {
-    padding: 40px 139px 271px 165px;
+    margin-top: 23px;
+    padding: 75px 139px 110px 165px;
     text-align: center;
     background: var(--color-header);
 }
@@ -136,7 +135,7 @@ footer .talk-here {
     line-height: 127px;
 }
 .header-home h2 {
-    margin-bottom: 49px;
+    margin-bottom: 35px;
     font-family: var(--font-color);
     font-size: 24px;
     font-weight: 400;
@@ -160,7 +159,7 @@ footer .talk-here {
     background: var(--button-color);
 }
 .project {
-    padding: 120px 60px;
+    padding: 55px 60px;
 }
 .project h2 {
     margin-bottom: 55px;
@@ -173,13 +172,68 @@ footer .talk-here {
     font-weight: 400;
     line-height: 30px;
 }
-
+/* ABOUT  */
+.button {
+    margin: 20px 194px;
+}
+.certification {
+    margin: 80px auto;
+}
+.certification h2{
+    text-align: center;
+    color: var(--button-color);
+    font-size: 25px;
+    font-weight: 900;
+}
+.certification p {
+    margin: 10px 35px;
+    overflow: scroll;
+}
+.certification span {
+    font-weight: 700;
+    color: var(--button-color);
+}
+.certification a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+.certification a:hover {
+    text-decoration: underline;
+}
+.certification img {
+    margin-bottom: 25px;
+}
+/* CONTACT  */
+.contact-me {
+    margin: 60px 68px;
+}
+.contact-me h3 {
+    text-align: center;
+    color: var(--button-color);
+} 
+.contact-me p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-me a {
+    text-decoration: none;
+    color: var(--content-font);
+}
 @media (max-width:900px) {
 img {
     margin-top: 15px;
 } 
+/* NAVIGATION  */
+.container-fluid {
+    padding: 5px 15px;
+}
+.nav-link {
+    margin: 0px;
+}
+
 /* MAIN  */
 .main-content {
+    margin-top: 65px;
     padding: 30px 25px;
     text-align: center;
 }
@@ -198,6 +252,7 @@ img {
 
 /* HOME  */
 .header-home {
+    margin-top: 65px;
     padding: 30px 25px;
 }
 .header-home h1 {
@@ -217,5 +272,13 @@ img {
 }
 .project p {
     margin: 15px auto;
+}
+
+/* ABOUT  */
+.certification p {
+    margin: 10px 35px;
+}
+.button {
+    margin: 20px 0px;
 }
 }

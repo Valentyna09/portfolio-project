@@ -23,53 +23,49 @@
 
     <body>
         <!-- NAVIGATION -->
-        <div class="container">
-            <nav class="d-flex justify-content-between">
-                <a href="/" title="home page">
-                    <img src="images/logo.png" alt="logo" class="logo d-none d-md-block">
-                    <img src="images/logo-small.jpeg" alt="small logo" class="logo d-block d-md-none">
-                </a>
-                <ul>
-                    <li>
-                        <a href="/" title="home page">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about.html" title="about page">About</a>
-                    </li>
-                    <li>
-                        <a href="/work.html" class="active-link" title="work page">Work</a>
-                    </li>
-                    <li>
-                        <a href="/contact.html" title="contact page">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/" title="home page">Valentyna Rudenko</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/" title="home page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html" title="about page">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active-link" href="/work.html" title="work page">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" title="contact page">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <!-- MAIN  -->
         <div class="main-content container">
             <div class="content">
                 <h1 class="mb-4">Take a look at what I've been working on!</h1>
                 <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <img src="images/yogurt.png" alt="yogurt app preview" class="rounded">
-                        <h3 class="text-center mt-1">Yogurt Project</h3>
-                        <p class="text-center mt-1">Frontend Developer</p>
+                    <div class="col-md-12 mb-4">
+                        <h3 class="text-center mt-1" id="weather">Weather App</h3>
+                        <p class="text-center mt-1">Frontend Developer. Used technologies: HTML, CSS, JavaScript, API, Bootstrap.</p>
+                        <iframe src="https://weather-app-rv.netlify.app/" width="100%" height="1000px" align="center" frameborder="0">Your browser does not support iframes! Visit the <a href="https://weather-app-rv.netlify.app/">link</a> to see the project</iframe>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <img src="images/weather.png" alt="weather app preview" class="rounded">
-                        <h3 class="text-center mt-1">Weather App</h3>
-                        <p class="text-center mt-1">Frontend Developer</p>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <img src="images/dictionary.png" alt="dictionary app preview" class="rounded">
-                        <h3 class="text-center mt-1">Dictionary</h3>
-                        <p class="text-center mt-1">Frontend Developer</p>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <img src="images/translation.png" alt="translation app preview" class="rounded">
-                        <h3 class="text-center mt-1">Translation</h3>
-                        <p class="text-center mt-1">Frontend Developer</p>
+                    <div class="col-md-12 mb-4">
+                        <h3 class="text-center mt-1" id="bookshop">Bookshop</h3>
+                        <p class="text-center mt-1">Frontend Developer. Used technologies: HTML, CSS, JavaScript.
+                        <br>
+                        <a href="https://www.shecodes.io/workshops/shecodes-basics-65b0fa59-234a-4d61-bb1b-d5cb47061966/projects/1046460">View the project</a>
+                        </p>
+                        <img src="images/harry_potter .png" alt="dictionary app preview" class="rounded mt-4">
                     </div>
                 </div>
             </div>
