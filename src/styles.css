@@ -139,9 +139,9 @@ li a:hover, .active-link {
     color: white;
     background: var(--button-color);
 }
-.btn-contact-me:hover {
+/* .btn-contact-me:hover {
     background: var(--button-color) !important;
-}
+} */
 .project {
     padding: 120px 60px;
 }
@@ -163,9 +163,13 @@ li a:hover, .active-link {
     border-radius: 4px;
     color: var(--button-color);
 }
-.btn-content:hover {
+/* .btn:first-child:hover,
+:not(.btn-check)+.btn:hover {
+    background: var(--button-color);
+} */
+/* .btn-content:hover {
     border: 1px solid var(--button-color) !important;
-}
+} */
 
 @media (max-width:900px) {
 img {
