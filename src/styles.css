@@ -180,7 +180,7 @@ img {
 } 
 /* MAIN  */
 .main-content {
-    padding: 70px 25px;
+    padding: 30px 25px;
     text-align: center;
 }
 .main-content h1 {
@@ -198,10 +198,14 @@ img {
 
 /* HOME  */
 .header-home {
-    padding: 70px 25px;
+    padding: 30px 25px;
 }
 .header-home h1 {
-    font-size: 60px;
+    font-size: 50px;
+    line-height: 70px;
+}
+.header-home p {
+    font-size: 30px;
 }
 .project {
     padding: 0;
