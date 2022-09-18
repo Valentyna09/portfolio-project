@@ -67,6 +67,17 @@ li a:hover, .active-link {
     margin-bottom: 48px;
     font-size: 16px;
 }
+.btn-content {
+    padding: 18px 25px;
+    font-weight: 500;
+    border: 1px solid var(--button-color);
+    border-radius: 4px;
+    color: var(--button-color);
+}
+:not(.btn-check)+.btn:hover {
+    border: 1px solid var(--button-color);
+}
+
 /* FOOTER  */
 .talk-here {
     margin-top: 132px;
@@ -139,9 +150,9 @@ li a:hover, .active-link {
     color: white;
     background: var(--button-color);
 }
-/* .btn-contact-me:hover {
-    background: var(--button-color) !important;
-} */
+.btn:first-child:hover {
+    background: var(--button-color);
+}
 .project {
     padding: 120px 60px;
 }
@@ -156,20 +167,8 @@ li a:hover, .active-link {
     font-weight: 400;
     line-height: 30px;
 }
-.btn-content {
-    padding: 18px 25px;
-    font-weight: 500;
-    border: 1px solid var(--button-color);
-    border-radius: 4px;
-    color: var(--button-color);
-}
-/* .btn:first-child:hover,
-:not(.btn-check)+.btn:hover {
-    background: var(--button-color);
-} */
-/* .btn-content:hover {
-    border: 1px solid var(--button-color) !important;
-} */
+
+
 
 @media (max-width:900px) {
 img {
@@ -192,7 +191,6 @@ img {
     margin-bottom: 48px;
     font-size: 16px;
 }
-
 /* FOOTER  */
 .talk-here {
     padding: 10px;
